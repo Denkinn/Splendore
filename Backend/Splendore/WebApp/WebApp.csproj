@@ -1,0 +1,108 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-WebApp-24C9BD42-13A6-4303-9690-E5A028883036</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Http" Version="7.0.0" />
+        <PackageReference Include="Asp.Versioning.Mvc" Version="7.0.0" />
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="7.0.0" />
+        <PackageReference Include="Asp.Versioning.WebApi.ApiExplorer" Version="7.0.0" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.5" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BLL.App\BLL.App.csproj" />
+      <ProjectReference Include="..\DAL.EF.App\DAL.EF.App.csproj" />
+      <ProjectReference Include="..\Helpers.Base\Helpers.Base.csproj" />
+      <ProjectReference Include="..\Public.DTO\Public.DTO.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\AppointmentServices\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\AppointmentServices\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\AppointmentServices\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\AppointmentServices\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\AppointmentServices\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\AppointmentStatuses\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\AppointmentStatuses\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\AppointmentStatuses\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\AppointmentStatuses\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\AppointmentStatuses\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PaymentMethods\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PaymentMethods\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PaymentMethods\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PaymentMethods\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\PaymentMethods\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reviews\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Salons\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Salons\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Salons\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Salons\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Salons\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\SalonServices\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\SalonServices\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\SalonServices\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\SalonServices\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\SalonServices\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Schedules\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Schedules\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Schedules\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Schedules\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Schedules\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Services\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Services\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Services\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Services\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Services\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ServiceTypes\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ServiceTypes\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ServiceTypes\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ServiceTypes\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ServiceTypes\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Stylists\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Stylists\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Stylists\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Stylists\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Stylists\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Appointments\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Appointments\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Appointments\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Appointments\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Appointments\Index.cshtml" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Views\Schedules\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Schedules\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Schedules\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Schedules\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Schedules\Index.cshtml" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    
+</Project>

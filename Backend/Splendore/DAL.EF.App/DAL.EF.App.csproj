@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.4" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DAL.Contracts.App\DAL.Contracts.App.csproj" />
+      <ProjectReference Include="..\DAL.EF.Base\DAL.EF.Base.csproj" />
+      <ProjectReference Include="..\Domain.App\Domain.App.csproj" />
+    </ItemGroup>
+
+</Project>

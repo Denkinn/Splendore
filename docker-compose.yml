@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  dist-22-23-app:
+    container_name: dist-22-23-app
+    build:
+      context: ./Splendore
+      dockerfile: Dockerfile
+    ports:
+      # external:internal
+      - "8000:80"
+    depends_on: 
+      - dist-22-23-db
+    environment:
+      - ConnectionStrings:DefaultConnection=Host=dist-22-23-db:5432;Database=splendore;Username=postgres;Password=postgres
+  
+  dist-22-23-db:
+    container_name: dist-22-23-db
+    image: "postgres:15.2-bullseye"
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    ports:
+      # external:internal
+      - "5445:5432"
+    volumes:
+      - dist-22-23-postgres-volume:/var/lib/postgresql/data
+
+volumes:
+  dist-22-23-postgres-volume:

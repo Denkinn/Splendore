@@ -1,0 +1,166 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.nav-item {
+    font-size: 18px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: hsl(200, 100%, 100%);
+    margin-bottom: 60px;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a {
+    color: hsl(205, 100%, 60%);
+}
+
+.btn-primary {
+    color: #fff;
+    background: linear-gradient(to bottom right, hsl(199, 100%, 50%), hsl(200, 100%, 75%)); 
+    border: 0;
+}
+
+.btn-primary:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem hsla(199, 100%, 50%, 0.502), .125rem .125rem 1rem hsla(200, 100%, 75%, 0.502);
+  }
+  
+  .btn-primary:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem hsla(199, 100%, 50%, 0.502), .125rem .125rem 1rem hsla(200, 100%, 75%, 0.5);
+  }
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem hsla(200, 70%, 90%);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+
+/* Main button style */
+
+.button-62 {
+    background: linear-gradient(to bottom right, hsl(199, 100%, 65%), hsl(200, 100%, 85%));
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    transition: box-shadow .2s ease-in-out;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  
+  .button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem hsla(199, 100%, 70%, 0.502), .125rem .125rem 1rem hsla(200, 100%, 95%, 0.502);
+  }
+  
+  .button-62:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem hsla(199, 100%, 70%, 0.502), .125rem .125rem 1rem hsla(200, 100%, 95%, 0.5);
+  }
+  
+  .align-right {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+
+  /* Card style */
+
+   .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    background: linear-gradient(to bottom right, hsl(198, 87%, 94%), hsl(23, 100%, 98%));
+  }
+
+  /* Select style */
+
+  select {
+    width: 250px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, hsl(198, 87%, 94%), hsl(23, 100%, 98%));
+  }
+
+
+  label {
+    font-size: 25px;
+  }
+
+  /* Table style */
+
+  .apn-table {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .apn-table td{
+    padding: 5px;
+  }
+
+  .apn-table tbody td:nth-child(1) {
+	font-weight: bold;
+}
